@@ -7,23 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4026DAE20BDF40B0043475F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4026DAD20BDF40B0043475F /* Main.storyboard */; };
+		E4026DB020BDF41E0043475F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4026DAF20BDF41E0043475F /* LaunchScreen.storyboard */; };
 		E447A62A20BDD289008D9E33 /* BSTMarsRoverDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E447A62920BDD289008D9E33 /* BSTMarsRoverDelegate.m */; };
-		E447A63020BDD289008D9E33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E447A62E20BDD289008D9E33 /* Main.storyboard */; };
 		E447A63220BDD28A008D9E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E447A63120BDD28A008D9E33 /* Assets.xcassets */; };
-		E447A63520BDD28A008D9E33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E447A63320BDD28A008D9E33 /* LaunchScreen.storyboard */; };
 		E447A63820BDD28A008D9E33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E447A63720BDD28A008D9E33 /* main.m */; };
 		E447A64920BDD5C3008D9E33 /* BSTMarsRover.m in Sources */ = {isa = PBXBuildFile; fileRef = E447A64820BDD5C3008D9E33 /* BSTMarsRover.m */; };
 		E447A64C20BDD8E0008D9E33 /* BSTMarsPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = E447A64B20BDD8E0008D9E33 /* BSTMarsPhoto.m */; };
 		E447A64F20BDDDBF008D9E33 /* BSTSolDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = E447A64E20BDDDBF008D9E33 /* BSTSolDescription.m */; };
+		E447A65320BDE0EB008D9E33 /* BSTPhotoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E447A65220BDE0EB008D9E33 /* BSTPhotoCache.m */; };
+		E447A65620BDE1C8008D9E33 /* BSTPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E447A65520BDE1C8008D9E33 /* BSTPhotoCollectionViewCell.m */; };
+		E447A65920BDE2F6008D9E33 /* BSTMarsRoverClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E447A65820BDE2F6008D9E33 /* BSTMarsRoverClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E4026DAD20BDF40B0043475F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E4026DAF20BDF41E0043475F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E447A62520BDD288008D9E33 /* MarsRover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsRover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E447A62820BDD288008D9E33 /* BSTMarsRoverAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTMarsRoverAppDelegate.h; sourceTree = "<group>"; };
 		E447A62920BDD289008D9E33 /* BSTMarsRoverDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSTMarsRoverDelegate.m; sourceTree = "<group>"; };
-		E447A62F20BDD289008D9E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E447A63120BDD28A008D9E33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E447A63420BDD28A008D9E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E447A63620BDD28A008D9E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E447A63720BDD28A008D9E33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E447A64720BDD525008D9E33 /* BSTMarsRover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTMarsRover.h; sourceTree = "<group>"; };
@@ -33,6 +36,12 @@
 		E447A64D20BDDD68008D9E33 /* BSTSolDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTSolDescription.h; sourceTree = "<group>"; };
 		E447A64E20BDDDBF008D9E33 /* BSTSolDescription.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSTSolDescription.m; sourceTree = "<group>"; };
 		E447A65020BDDE80008D9E33 /* MarsRover-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarsRover-Bridging-Header.h"; sourceTree = "<group>"; };
+		E447A65120BDE0BC008D9E33 /* BSTPhotoCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTPhotoCache.h; sourceTree = "<group>"; };
+		E447A65220BDE0EB008D9E33 /* BSTPhotoCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSTPhotoCache.m; sourceTree = "<group>"; };
+		E447A65420BDE14C008D9E33 /* BSTPhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		E447A65520BDE1C8008D9E33 /* BSTPhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSTPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		E447A65720BDE2C8008D9E33 /* BSTMarsRoverClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTMarsRoverClient.h; sourceTree = "<group>"; };
+		E447A65820BDE2F6008D9E33 /* BSTMarsRoverClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSTMarsRoverClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +104,8 @@
 		E447A63F20BDD2FA008D9E33 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E447A65120BDE0BC008D9E33 /* BSTPhotoCache.h */,
+				E447A65220BDE0EB008D9E33 /* BSTPhotoCache.m */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -102,6 +113,8 @@
 		E447A64120BDD310008D9E33 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E447A65420BDE14C008D9E33 /* BSTPhotoCollectionViewCell.h */,
+				E447A65520BDE1C8008D9E33 /* BSTPhotoCollectionViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,6 +129,8 @@
 		E447A64320BDD31D008D9E33 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				E447A65720BDE2C8008D9E33 /* BSTMarsRoverClient.h */,
+				E447A65820BDE2F6008D9E33 /* BSTMarsRoverClient.m */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -141,8 +156,8 @@
 		E447A64620BDD38C008D9E33 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				E447A62E20BDD289008D9E33 /* Main.storyboard */,
-				E447A63320BDD28A008D9E33 /* LaunchScreen.storyboard */,
+				E4026DAF20BDF41E0043475F /* LaunchScreen.storyboard */,
+				E4026DAD20BDF40B0043475F /* Main.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -204,9 +219,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E447A63520BDD28A008D9E33 /* LaunchScreen.storyboard in Resources */,
+				E4026DB020BDF41E0043475F /* LaunchScreen.storyboard in Resources */,
 				E447A63220BDD28A008D9E33 /* Assets.xcassets in Resources */,
-				E447A63020BDD289008D9E33 /* Main.storyboard in Resources */,
+				E4026DAE20BDF40B0043475F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,34 +232,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E447A65920BDE2F6008D9E33 /* BSTMarsRoverClient.m in Sources */,
 				E447A63820BDD28A008D9E33 /* main.m in Sources */,
+				E447A65320BDE0EB008D9E33 /* BSTPhotoCache.m in Sources */,
 				E447A64F20BDDDBF008D9E33 /* BSTSolDescription.m in Sources */,
 				E447A62A20BDD289008D9E33 /* BSTMarsRoverDelegate.m in Sources */,
 				E447A64920BDD5C3008D9E33 /* BSTMarsRover.m in Sources */,
 				E447A64C20BDD8E0008D9E33 /* BSTMarsPhoto.m in Sources */,
+				E447A65620BDE1C8008D9E33 /* BSTPhotoCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E447A62E20BDD289008D9E33 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E447A62F20BDD289008D9E33 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E447A63320BDD28A008D9E33 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E447A63420BDD28A008D9E33 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E447A63920BDD28A008D9E33 /* Debug */ = {
