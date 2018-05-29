@@ -6,8 +6,16 @@
 //  Copyright © 2018 Brock Tyler. All rights reserved.
 //
 
-#ifndef BSTMarsPhoto_h
-#define BSTMarsPhoto_h
+#import <Foundation/Foundation.h>
 
-
-#endif /* BSTMarsPhoto_h */
+@interface BSTMarsPhoto : NSObject
+    
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+    
+@property (nonatomic, readonly) NSInteger identifier;
+@property (nonatomic, readonly) NSInteger sol;
+@property (nonatomic, strong, readonly) NSString *cameraName;
+@property (nonatomic, strong, readonly) NSDate *earthDate;
+@property (nonatomic, strong, readonly) NSURL *imageURL;
+    
+@end

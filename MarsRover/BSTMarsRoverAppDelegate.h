@@ -1,5 +1,5 @@
 //
-//  BSTAppDelegate.h
+//  BSTMarsRoverAppDelegate.h
 //  MarsRover
 //
 //  Created by brock tyler on 5/29/18.
@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface BSTMarsRoverAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
 
 @end
 
