@@ -13,7 +13,7 @@ typedef NS_ENUM(NSInteger, BSTMarsRoverStatus) {
     BSTMarsRoverStatusComplete,
 };
 
-@interface DMNMarsRover : NSObject
+@interface BSTMarsRover : NSObject
     
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
     
