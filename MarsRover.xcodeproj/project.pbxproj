@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		E4026DAE20BDF40B0043475F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4026DAD20BDF40B0043475F /* Main.storyboard */; };
 		E4026DB020BDF41E0043475F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4026DAF20BDF41E0043475F /* LaunchScreen.storyboard */; };
+		E4026DB320BE01CA0043475F /* BSTRoversTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4026DB220BE01CA0043475F /* BSTRoversTableViewController.m */; };
+		E4026DB620BE03430043475F /* BSTSolsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4026DB520BE03430043475F /* BSTSolsTableViewController.m */; };
+		E4026DB920BE03970043475F /* BSTPhotosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4026DB820BE03970043475F /* BSTPhotosCollectionViewController.m */; };
+		E4026DBC20BE04A80043475F /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4026DBB20BE04A80043475F /* PhotoDetailViewController.swift */; };
+		E4026DBE20BE0A060043475F /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4026DBD20BE0A060043475F /* APIKeys.plist */; };
 		E447A62A20BDD289008D9E33 /* BSTMarsRoverDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E447A62920BDD289008D9E33 /* BSTMarsRoverDelegate.m */; };
 		E447A63220BDD28A008D9E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E447A63120BDD28A008D9E33 /* Assets.xcassets */; };
 		E447A63820BDD28A008D9E33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E447A63720BDD28A008D9E33 /* main.m */; };
@@ -23,6 +28,15 @@
 /* Begin PBXFileReference section */
 		E4026DAD20BDF40B0043475F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E4026DAF20BDF41E0043475F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E4026DB120BE01B50043475F /* BSTRoversTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTRoversTableViewController.h; sourceTree = "<group>"; };
+		E4026DB220BE01CA0043475F /* BSTRoversTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSTRoversTableViewController.m; sourceTree = "<group>"; };
+		E4026DB420BE03350043475F /* BSTSolsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTSolsTableViewController.h; sourceTree = "<group>"; };
+		E4026DB520BE03430043475F /* BSTSolsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSTSolsTableViewController.m; sourceTree = "<group>"; };
+		E4026DB720BE03870043475F /* BSTPhotosCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTPhotosCollectionViewController.h; sourceTree = "<group>"; };
+		E4026DB820BE03970043475F /* BSTPhotosCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSTPhotosCollectionViewController.m; sourceTree = "<group>"; };
+		E4026DBA20BE04A80043475F /* MarsRover-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarsRover-Bridging-Header.h"; sourceTree = "<group>"; };
+		E4026DBB20BE04A80043475F /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		E4026DBD20BE0A060043475F /* APIKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
 		E447A62520BDD288008D9E33 /* MarsRover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsRover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E447A62820BDD288008D9E33 /* BSTMarsRoverAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTMarsRoverAppDelegate.h; sourceTree = "<group>"; };
 		E447A62920BDD289008D9E33 /* BSTMarsRoverDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSTMarsRoverDelegate.m; sourceTree = "<group>"; };
@@ -35,7 +49,6 @@
 		E447A64B20BDD8E0008D9E33 /* BSTMarsPhoto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSTMarsPhoto.m; sourceTree = "<group>"; };
 		E447A64D20BDDD68008D9E33 /* BSTSolDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTSolDescription.h; sourceTree = "<group>"; };
 		E447A64E20BDDDBF008D9E33 /* BSTSolDescription.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSTSolDescription.m; sourceTree = "<group>"; };
-		E447A65020BDDE80008D9E33 /* MarsRover-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarsRover-Bridging-Header.h"; sourceTree = "<group>"; };
 		E447A65120BDE0BC008D9E33 /* BSTPhotoCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTPhotoCache.h; sourceTree = "<group>"; };
 		E447A65220BDE0EB008D9E33 /* BSTPhotoCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSTPhotoCache.m; sourceTree = "<group>"; };
 		E447A65420BDE14C008D9E33 /* BSTPhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTPhotoCollectionViewCell.h; sourceTree = "<group>"; };
@@ -122,6 +135,14 @@
 		E447A64220BDD316008D9E33 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E4026DB120BE01B50043475F /* BSTRoversTableViewController.h */,
+				E4026DB220BE01CA0043475F /* BSTRoversTableViewController.m */,
+				E4026DB420BE03350043475F /* BSTSolsTableViewController.h */,
+				E4026DB520BE03430043475F /* BSTSolsTableViewController.m */,
+				E4026DB720BE03870043475F /* BSTPhotosCollectionViewController.h */,
+				E4026DB820BE03970043475F /* BSTPhotosCollectionViewController.m */,
+				E4026DBB20BE04A80043475F /* PhotoDetailViewController.swift */,
+				E4026DBA20BE04A80043475F /* MarsRover-Bridging-Header.h */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -138,7 +159,6 @@
 		E447A64420BDD324008D9E33 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E447A65020BDDE80008D9E33 /* MarsRover-Bridging-Header.h */,
 				E447A63720BDD28A008D9E33 /* main.m */,
 			);
 			path = "Support Files";
@@ -149,6 +169,7 @@
 			children = (
 				E447A63120BDD28A008D9E33 /* Assets.xcassets */,
 				E447A63620BDD28A008D9E33 /* Info.plist */,
+				E4026DBD20BE0A060043475F /* APIKeys.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -193,6 +214,7 @@
 				TargetAttributes = {
 					E447A62420BDD288008D9E33 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -220,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4026DB020BDF41E0043475F /* LaunchScreen.storyboard in Resources */,
+				E4026DBE20BE0A060043475F /* APIKeys.plist in Resources */,
 				E447A63220BDD28A008D9E33 /* Assets.xcassets in Resources */,
 				E4026DAE20BDF40B0043475F /* Main.storyboard in Resources */,
 			);
@@ -234,11 +257,15 @@
 			files = (
 				E447A65920BDE2F6008D9E33 /* BSTMarsRoverClient.m in Sources */,
 				E447A63820BDD28A008D9E33 /* main.m in Sources */,
+				E4026DB920BE03970043475F /* BSTPhotosCollectionViewController.m in Sources */,
 				E447A65320BDE0EB008D9E33 /* BSTPhotoCache.m in Sources */,
 				E447A64F20BDDDBF008D9E33 /* BSTSolDescription.m in Sources */,
 				E447A62A20BDD289008D9E33 /* BSTMarsRoverDelegate.m in Sources */,
+				E4026DBC20BE04A80043475F /* PhotoDetailViewController.swift in Sources */,
 				E447A64920BDD5C3008D9E33 /* BSTMarsRover.m in Sources */,
 				E447A64C20BDD8E0008D9E33 /* BSTMarsPhoto.m in Sources */,
+				E4026DB320BE01CA0043475F /* BSTRoversTableViewController.m in Sources */,
+				E4026DB620BE03430043475F /* BSTSolsTableViewController.m in Sources */,
 				E447A65620BDE1C8008D9E33 /* BSTPhotoCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CJKY4ZP9T7;
 				INFOPLIST_FILE = "$(SRCROOT)/MarsRover/Resources/Info.plist";
@@ -369,6 +397,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brocktyler.MarsRover;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MarsRover/View Controllers/MarsRover-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -377,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CJKY4ZP9T7;
 				INFOPLIST_FILE = "$(SRCROOT)/MarsRover/Resources/Info.plist";
@@ -386,6 +418,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brocktyler.MarsRover;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MarsRover/View Controllers/MarsRover-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

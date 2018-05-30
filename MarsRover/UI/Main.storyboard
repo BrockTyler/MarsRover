@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Rovers Table View Controller-->
         <scene sceneID="G9x-4L-qJB">
             <objects>
-                <tableViewController id="uZl-ot-P0j" customClass="DMNRoversTableViewController" sceneMemberID="viewController">
+                <tableViewController id="uZl-ot-P0j" customClass="BSTRoversTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="k18-6w-7HB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +54,7 @@
         <!--Sols Table View Controller-->
         <scene sceneID="4Tu-aK-Zsv">
             <objects>
-                <tableViewController id="Es6-NF-daU" customClass="DMNSolsTableViewController" sceneMemberID="viewController">
+                <tableViewController id="Es6-NF-daU" customClass="BSTSolsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="RJC-dV-aeF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,7 +101,7 @@
         <!--Photos Collection View Controller-->
         <scene sceneID="Mw6-ak-00M">
             <objects>
-                <collectionViewController id="3Ta-A8-5jd" customClass="DMNPhotosCollectionViewController" sceneMemberID="viewController">
+                <collectionViewController id="3Ta-A8-5jd" customClass="BSTPhotosCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="hRe-kN-Mrt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,7 +113,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="8Tv-2P-bzb" customClass="DMNPhotoCollectionViewCell">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="8Tv-2P-bzb" customClass="BSTPhotoCollectionViewCell">
                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -131,7 +132,7 @@
                                     <constraint firstAttribute="bottom" secondItem="mgb-Qp-tsv" secondAttribute="bottom" id="bPn-lC-MWp"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="imageView" destination="mgb-Qp-tsv" id="tkY-vu-ook"/>
+                                    <outlet property="imageView" destination="mgb-Qp-tsv" id="3y9-AV-J7z"/>
                                     <segue destination="eHT-bF-QV2" kind="show" identifier="PhotoDetailSegue" id="5wE-Yb-kcI"/>
                                 </connections>
                             </collectionViewCell>
@@ -163,6 +164,9 @@
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MarsPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="wyl-o2-9eD">
                                         <rect key="frame" x="75" y="0.0" width="225" height="225"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="wyl-o2-9eD" secondAttribute="height" multiplier="1:1" id="m4q-0S-WnX"/>
+                                        </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="A0t-KW-vxM">
                                         <rect key="frame" x="60.5" y="235" width="254.5" height="20.5"/>
@@ -233,7 +237,7 @@
                     <connections>
                         <outlet property="cameraLabel" destination="3Zn-cU-nbV" id="SZn-hv-H5v"/>
                         <outlet property="dateLabel" destination="65i-lj-E2e" id="NJp-Wt-AMH"/>
-                        <outlet property="imageView" destination="wyl-o2-9eD" id="8KA-7e-Rmn"/>
+                        <outlet property="imageView" destination="wyl-o2-9eD" id="Su4-Ov-mBh"/>
                         <outlet property="solLabel" destination="BWa-0s-lWf" id="dDC-sX-wbN"/>
                     </connections>
                 </viewController>
