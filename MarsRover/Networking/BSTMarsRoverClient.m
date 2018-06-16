@@ -23,7 +23,7 @@
         }
             
         if (!data) {
-            return completion(nil, [NSError errorWithDomain:@"com.DevMountain.Rover.ErrorDomain" code:-1 userInfo:nil]);
+            return completion(nil, [NSError errorWithDomain:@"com.brocktyler.MarsRover.ErrorDomain" code:-1 userInfo:nil]);
         }
             
         NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
@@ -32,7 +32,7 @@
             !(roverDicts = jsonDict[@"rovers"])) {
             NSDictionary *userInfo = nil;
             if (error) { userInfo = @{NSUnderlyingErrorKey : error}; }
-            NSError *localError = [NSError errorWithDomain:@"com.DevMountain.Rover.ErrorDomain" code:-1 userInfo:userInfo];
+            NSError *localError = [NSError errorWithDomain:@"com.brocktyler.MarsRover.ErrorDomain" code:-1 userInfo:userInfo];
             return completion(nil, localError);
         }
             
@@ -55,7 +55,7 @@
         }
             
         if (!data) {
-            return completion(nil, [NSError errorWithDomain:@"com.DevMountain.Rover.ErrorDomain" code:-1 userInfo:nil]);
+            return completion(nil, [NSError errorWithDomain:@"com.brocktyler.MarsRover.ErrorDomain" code:-1 userInfo:nil]);
         }
             
         NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
@@ -64,7 +64,7 @@
             !(manifest = jsonDict[@"photo_manifest"])) {
             NSDictionary *userInfo = nil;
             if (error) { userInfo = @{NSUnderlyingErrorKey : error}; }
-            NSError *localError = [NSError errorWithDomain:@"com.DevMountain.Rover.ErrorDomain" code:-1 userInfo:userInfo];
+            NSError *localError = [NSError errorWithDomain:@"com.brocktyler.MarsRover.ErrorDomain" code:-1 userInfo:userInfo];
             return completion(nil, localError);
         }
             
@@ -76,7 +76,7 @@
 {
     if (!rover) {
         NSLog(@"%s called with a nil rover.", __PRETTY_FUNCTION__);
-        return completion(nil, [NSError errorWithDomain:@"com.DevMountain.Rover.ErrorDomain" code:-2 userInfo:nil]);
+        return completion(nil, [NSError errorWithDomain:@"com.brocktyler.MarsRover.ErrorDomain" code:-2 userInfo:nil]);
     }
         
     NSURL *url = [[self class] urlForPhotosFromRover:rover.name onSol:sol];
@@ -86,14 +86,14 @@
         }
             
         if (!data) {
-            return completion(nil, [NSError errorWithDomain:@"com.DevMountain.Rover.ErrorDomain" code:-1 userInfo:nil]);
+            return completion(nil, [NSError errorWithDomain:@"com.brocktyler.MarsRover.ErrorDomain" code:-1 userInfo:nil]);
         }
             
         NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
         if (!jsonDict || ![jsonDict isKindOfClass:[NSDictionary class]]) {
             NSDictionary *userInfo = nil;
             if (error) { userInfo = @{NSUnderlyingErrorKey : error}; }
-            NSError *localError = [NSError errorWithDomain:@"com.DevMountain.Rover.ErrorDomain" code:-1 userInfo:userInfo];
+            NSError *localError = [NSError errorWithDomain:@"com.brocktyler.MarsRover.ErrorDomain" code:-1 userInfo:userInfo];
             return completion(nil, localError);
         }
             
@@ -120,7 +120,7 @@
         }
             
         if (!data) {
-            return completion(nil, [NSError errorWithDomain:@"com.DevMountain.Rover.ErrorDomain" code:-1 userInfo:nil]);
+            return completion(nil, [NSError errorWithDomain:@"com.brocktyler.MarsRover.ErrorDomain" code:-1 userInfo:nil]);
         }
             
         completion(data, nil);
